@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-
+import "@lrnwebcomponents/meme-maker";
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
 class CardsApp extends LitElement {
@@ -58,6 +58,7 @@ class CardsApp extends LitElement {
   render() {
     return html`
       <main>
+        <meme-maker></meme-maker>
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.header}</h1>
 
