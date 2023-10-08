@@ -1,5 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import "@lrnwebcomponents/meme-maker";
+import "@stephaniegoodie/my-card/src/my-card.js";
+
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
 class CardsApp extends LitElement {
@@ -58,23 +60,13 @@ class CardsApp extends LitElement {
   render() {
     return html`
       <main>
-        <meme-maker></meme-maker>
-        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
-        <h1>${this.header}</h1>
-
-        <p>Edit <code>src/CardsApp.js</code> and save to reload.</p>
-        <a
-          class="app-link"
-          href="https://open-wc.org/guides/developing-components/code-examples/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Code examples
-        </a>
+      <my-card></my-card>
+      <meme-maker alt="Cat stalking a small toy" image-url="https://cdn2.thecatapi.com/images/9j5.jpg" top-text="I bring you" bottom-text="the death">
+</meme-maker>
       </main>
 
       <p class="app-footer">
-        🚽 Made with love by
+        🚽 Annahilated by Stephanie, but Made with love by
         <a
           target="_blank"
           rel="noopener noreferrer"
